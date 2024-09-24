@@ -1,0 +1,65 @@
+
+
+
+POST http://127.0.0.1:5000/produto
+Content-Type: application/json
+
+{
+    "descricao": "Acai",
+    "unidade": "Litro",
+    "quantidade": 10,
+    "preco_real": 12.50,
+    "preco_dolar": 0
+}
+
+###
+
+POST http://127.0.0.1:5000/produto
+Content-Type: application/json
+
+{
+    "descricao": "Tucuma",
+    "unidade": "Kg",
+    "quantidade": 30,
+    "preco_real": 17.30,
+    "preco_dolar": 0
+}
+
+###
+
+POST http://127.0.0.1:5000/produto
+Content-Type: application/json
+
+{
+    "descricao": "Tapioca",
+    "unidade": "Unid",
+    "quantidade": 5,
+    "preco_real": 4.70,
+    "preco_dolar": 0
+}
+
+###
+
+// Listar todos os produtos em ordem alfabética do nome
+
+GET http://127.0.0.1:5000/produto
+Content-Type: application/json
+
+###
+
+// Obter usuário pelo ID
+GET http://127.0.0.1:5000/produto/1
+Content-Type: application/json
+###
+
+GET http://127.0.0.1:5000/produto/2
+Content-Type: application/json
+###
+
+GET http://127.0.0.1:5000/produto/3
+Content-Type: application/json
+###
+
+// Deletar usuário pelo ID
+DELETE http://127.0.0.1:5000/produto/3
+Content-Type: application/json

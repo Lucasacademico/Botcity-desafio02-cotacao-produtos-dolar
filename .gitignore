@@ -1,0 +1,4 @@
+env_desafio2_bot/
+.vscode/
+__pycache__/
+*.pyc
