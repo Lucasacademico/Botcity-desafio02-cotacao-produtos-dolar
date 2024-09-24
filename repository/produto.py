@@ -1,12 +1,20 @@
 import database
+import busca_dolar as dolar
 
 # Função 1 - Criar produto
 def criar_produto(produto):
     try:
         conect = database.criar_db()
         cursor = conect.cursor()
+
+        # Obter o preço do dólar
+        dolar_price = dolar.search_dolar()
+
+        # Calcular o preço em dólar
+        preco_dolar = produto['preco_real'] * dolar_price
+
         sql = f"INSERT INTO produto(descricao, unidade, quantidade, preco_real, preco_dolar) VALUES('{produto['descricao']}','{
-            produto['unidade']}', '{produto['quantidade']}', '{produto['preco_real']}','{produto['preco_dolar']}')"
+            produto['unidade']}', '{produto['quantidade']}', '{produto['preco_real']}','{preco_dolar}')"
         print(sql)
         cursor.execute(sql)
         last_id = cursor.lastrowid
