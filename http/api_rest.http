@@ -61,5 +61,5 @@ Content-Type: application/json
 ###
 
 // Deletar usuário pelo ID
-DELETE http://127.0.0.1:5000/produto/3
+DELETE http://127.0.0.1:5000/produto/1
 Content-Type: application/json
