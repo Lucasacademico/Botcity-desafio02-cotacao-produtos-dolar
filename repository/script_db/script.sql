@@ -15,3 +15,5 @@ CREATE TABLE banco.produto(
  preco_dolar DECIMAL(10,2) NOT NULL,
  PRIMARY KEY (id)
  );
+
+ ALTER TABLE banco.produto AUTO_INCREMENT = 1
