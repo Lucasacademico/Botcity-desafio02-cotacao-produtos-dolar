@@ -41,14 +41,13 @@ Content-Type: application/json
 ###
 
 // Listar todos os produtos em ordem alfabética do nome
-
 GET http://127.0.0.1:5000/produto
 Content-Type: application/json
 
 ###
 
-// Obter usuário pelo ID
-GET http://127.0.0.1:5000/produto/1
+// Obter usuário pelo ID---------------------
+GET http://127.0.0.1:5000/produto/4
 Content-Type: application/json
 ###
 
@@ -60,6 +59,6 @@ GET http://127.0.0.1:5000/produto/3
 Content-Type: application/json
 ###
 
-// Deletar usuário pelo ID
-DELETE http://127.0.0.1:5000/produto/7
+// Deletar usuário pelo ID-------------------
+DELETE http://127.0.0.1:5000/produto/5
 Content-Type: application/json

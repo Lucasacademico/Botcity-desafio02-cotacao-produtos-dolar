@@ -2,11 +2,13 @@ from flask import Flask, make_response, jsonify, request, Response
 import sys
 import os
 
-modulo = os.path.abspath(os.path.join(os.path.dirname(__file__), '../', 'repository'))
-sys.path.append(modulo)
+# Adiciona o caminho da pasta 'repository' ao sys.path para garantir o acesso aos arquivos de produto
+modulo_repository = os.path.abspath(os.path.join(os.path.dirname(__file__), '../', 'repository'))
+sys.path.append(modulo_repository)
+
 
 import produto
-from busca_dolar import search_dolar  # Adicione esta importação
+from busca_dolar import search_dolar  # Correção da importação
 
 # Instanciar 
 app_api = Flask('api_database')
